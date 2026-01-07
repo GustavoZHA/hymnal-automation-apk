@@ -1,0 +1,12 @@
+target
+allure-results
+
+### IntelliJ IDEA ###
+.idea/
+.env
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+src/test/resources/app/android/app-Himnario-v0.1.2.1.apk
