@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Mobile Automation Suite">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="apk.automation.hymnal.TestListener"/>
+    </listeners>
+
+    <test name="Android Tests">
+        <classes>
+            <class name="apk.automation.hymnal.Test.ListTest"/>
+        </classes>
+    </test>
+
+</suite>

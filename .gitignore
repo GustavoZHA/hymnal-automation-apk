@@ -1,6 +1,7 @@
 target
 allure-results
-
+./gradlew
+.gradle
 ### IntelliJ IDEA ###
 .idea/
 .env

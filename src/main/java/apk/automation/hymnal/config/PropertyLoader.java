@@ -15,7 +15,7 @@ public class PropertyLoader {
             properties.load(fis);
 
         } catch (Exception e) {
-            throw new RuntimeException("❌ Failed to load environment properties", e);
+            throw new RuntimeException("Failed to load environment properties", e);
         }
     }
 
