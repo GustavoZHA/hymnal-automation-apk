@@ -13,5 +13,4 @@ public class TestListener implements ITestListener{
             AllureUtils.takeScreenshot(driver);
         }
     }
-
 }

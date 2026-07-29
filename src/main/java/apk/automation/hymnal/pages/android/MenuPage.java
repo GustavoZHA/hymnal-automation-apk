@@ -3,6 +3,7 @@ package apk.automation.hymnal.pages.android;
 import apk.automation.hymnal.enums.MenuOption;
 import apk.automation.hymnal.pages.android.BarMenuCP;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class MenuPage extends BarMenuCP {
     private final By btnHimnario = By.id("com.example.himnarioprincipal:id/bHimnario");
@@ -14,33 +15,28 @@ public class MenuPage extends BarMenuCP {
 
     private By btnGoHomeButton = By.id("com.example.himnarioprincipal:id/btn_home_button_bar");
 
-
-    public void selectMenu(MenuOption option) {
+    public WebElement selectMenu(MenuOption option) {
         switch (option) {
             case HIMNARIO:
-                driver.findElement(btnHimnario).click();
-                break;
+                return driver.findElement(btnHimnario);
+
             case BUSCAR:
-                driver.findElement(btnBuscar).click();
-                break;
+                return driver.findElement(btnBuscar);
+
             case FAVORITOS:
-                driver.findElement(btnFavoritos).click();
-                break;
+                return driver.findElement(btnFavoritos);
 
             case CONOCIDOS:
-                driver.findElement(btnConocidos).click();
-                break;
+                return driver.findElement(btnConocidos);
 
             case CLASIFICACION_HIMNOS:
-                driver.findElement(btnClasificacion).click();
-                break;
+                return driver.findElement(btnClasificacion);
 
             case LISTAS_PERSONALIZADAS:
-                driver.findElement(btnListas).click();
-                break;
+                return driver.findElement(btnListas);
+
             default:
                 throw new IllegalArgumentException("Menu option not supported: " + option);
         }
     }
-
 }
